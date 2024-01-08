@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'widget_tweaks',
     'bootstrap_modal_forms',
-    'rest_framework',
 ]
 
 MIDDLEWARE = [
