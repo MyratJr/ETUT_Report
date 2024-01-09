@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_m(^nydq@rxzxp%=k_#$o@jaly2m)@yz!08%!kn&d4iscz7o8@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['10.1.5.90','127.0.0.1']
+ALLOWED_HOSTS = ['172.16.0.99','127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise.runserver_nostatic',
     'widget_tweaks',
     'bootstrap_modal_forms',
 ]
@@ -58,7 +57,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django_auto_logout.middleware.auto_logout',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'barcode_z.urls'
@@ -92,10 +90,11 @@ WSGI_APPLICATION = 'barcode_z.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'salam_sagbol',
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
-        'HOST': 'localhost'
+        'NAME': 'gatnashyk',
+        'USER': 'myrat',
+        'PASSWORD': 'myrat9876',
+        'HOST': 'localhost',
+        'PORT': 5432
     }
 }
 
